@@ -1,0 +1,158 @@
+/* tiny reset */
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+/* body */
+body{
+  background: #4d244e;
+  font-family: sans-serif;
+  border-top: 5px solid #aa8e8d;
+}
+/* title */
+
+header{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content:first baseline;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: #ae5f75;
+}
+
+header .logo a{
+    font-size: 2rem;
+    color: #ae5f75;
+}
+
+
+header .logo span{
+    color: #f6bd66;
+}
+
+header .navbar a{
+    font-size: 1rem;
+    margin-left: 1rem;
+    color:#aa8e8d;
+}
+header .navbar a b{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+}
+header .navbar a:hover{
+    color:rgb(223, 236, 232);
+}
+
+
+h1{
+  color: #aa8e8d;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+}
+/* tasks */
+.tasks{
+  width: 300px;
+  height: 405px;
+  position: absolute;
+  top: 20%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+}
+input[type=checkbox] {
+  display: none;
+}
+label{
+  background: #f6bd66;
+  height: 69px;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #2C3E50;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+label h2 span{
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #fff;
+}
+label:before{
+  content:"";
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+  transition: border 0.7s ease
+}
+
+.element{
+  color:#6d335c;
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top:1rem ;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background-color:#ae5f75;
+    font-size: 1rem;
+    color:rgb(247, 244, 247);
+    cursor: pointer;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    transition: all .3s linear;
+
+}
+
+#label-1:checked ~ label[for=label-1],
+#label-2:checked ~ label[for=label-2],
+#label-3:checked ~ label[for=label-3],
+#label-4:checked ~ label[for=label-4],
+#label-5:checked ~ label[for=label-5]{
+  background: #e6b4d7;
+  border-bottom: 1px solid #34495E;
+  color: #e9dfdf;
+}
+#label-1:checked ~ label[for=label-1] h2 span,
+#label-2:checked ~ label[for=label-2] h2 span,
+#label-3:checked ~ label[for=label-3] h2 span,
+#label-4:checked ~ label[for=label-4] h2 span,
+#label-5:checked ~ label[for=label-5] h2 span{
+  color: #e9e7e3;
+}
+#label-1:checked ~ label[for=label-1]:before,
+#label-2:checked ~ label[for=label-2]:before,
+#label-3:checked ~ label[for=label-3]:before,
+#label-4:checked ~ label[for=label-4]:before,
+#label-5:checked ~ label[for=label-5]:before{
+  background: url("https://i.imgur.com/eoPQ05r.png") no-repeat center center;
+}
