@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/dashboard.css">
     
-    <title>Document</title>
+    <title>dashboard</title>
 </head>
 <body>
   <!--header-->

@@ -50,7 +50,7 @@ $row = $database->single();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact V4</title>
+	<title>Task</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -116,7 +116,7 @@ $row = $database->single();
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
 						
-							<span>
+							<span class="contact100-form-btn">
 								<input type="submit" value="Update" name="submit" />
 								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
 							</span>

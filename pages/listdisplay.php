@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Animated Login Form | CodingNepal</title>
+    <title>List</title>
     <link rel="stylesheet" href="pages/style.css">
 </head>
 
